@@ -20,7 +20,7 @@ export class SignUpComponent {
   onSubmit() {
     if (this.authService.signUp(this.data.value)) {
       alert('Auto Login Success');
-      this.router.navigate(['auth/profile']);
+      this.router.navigate(['profile']);
     }
   }
  

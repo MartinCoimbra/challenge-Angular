@@ -19,7 +19,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.authService.login(this.data.value)) {
       alert('Login Success');
-      this.router.navigate(['auth/profile']);
+      this.router.navigate(['profile']);
     }
   }
 }

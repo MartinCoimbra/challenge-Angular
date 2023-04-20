@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'random',
+  standalone: true
 })
 export class RandomPipe implements PipeTransform {
   greetings = [
@@ -10,10 +11,12 @@ export class RandomPipe implements PipeTransform {
     { part1: 'Cheers ', part2: ', you rock!' },
   ];
 
+  constructor(){}
+
   transform(value: unknown): string {
-    const elementoAleatorio =
+    const elementRandom =
       this.greetings[Math.floor(Math.random() * this.greetings.length)];
 
-    return elementoAleatorio.part1 + value + elementoAleatorio.part2;
+    return elementRandom.part1 + value + elementRandom.part2;
   }
 }
