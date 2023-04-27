@@ -1,0 +1,10 @@
+<div class="card mx-auto mt-2 p-0 col-4">
+    <img class="card-img-top" [src]="data.image" alt="Card image cap" />
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <h5 class="card-title">{{ data.title }}</h5>
+        <span class="h4 text-danger ms-5"> ${{ data.price }}</span>
+      </div>
+      <p class="card-text">{{ data.description }}</p>
+    </div>
+  </div>
