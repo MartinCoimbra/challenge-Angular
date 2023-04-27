@@ -12,5 +12,4 @@ export class HomeComponent {
     console.log(this.items)
   }
 
-  
 }

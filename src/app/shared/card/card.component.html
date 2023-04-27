@@ -1,4 +1,4 @@
-<div *ngIf="itemCard.type === 'product'">
+<!-- <div *ngIf="itemCard.type === 'product'">
   <app-product [data]="itemCard"></app-product>
 </div>
 <div *ngIf="itemCard.type === 'post'">
@@ -6,8 +6,12 @@
 </div>
 <div *ngIf="itemCard.type === 'quote'">
   <app-quote [data]="itemCard"></app-quote>
-</div>
+</div> -->
 
 <!-- <div>
   <ng-content [select]="itemCard.type"></ng-content>
-</div> -->
+</div>
+ -->
+
+ <!-- marcamos donde "subiriamos la card" -->
+ <ng-template adHost></ng-template>
